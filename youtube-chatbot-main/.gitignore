@@ -1,0 +1,22 @@
+# Secrets: never commit these
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Large model files. Run `python download_models.py` to fetch them.
+# The small reviewed HHEM code and config files stay in git.
+local_models/**/model.safetensors
+local_models/**/.cache/
+local_models/hhem_hub_cache/
+local_models/hhem_modules_cache/
+local_models/nli-deberta-v3-xsmall/
+
+# Old manual backups and logs, now replaced by git history
+*.bak
+*.orig
+verification_logs/
+project_snapshots/

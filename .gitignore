@@ -1,0 +1,26 @@
+# Secrets: never commit these
+.env
+**/.env
+!**/.env.example
+
+# Snapshots and logs, replaced by git history
+project_snapshots/
+**/project_snapshots/
+verification_logs/
+**/verification_logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Old manual backups
+*.bak
+*.orig
+
+# Large model files
+**/local_models/**/model.safetensors
+**/local_models/hhem_hub_cache/
+**/local_models/hhem_modules_cache/
+**/local_models/nli-deberta-v3-xsmall/

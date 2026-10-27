@@ -1,0 +1,13 @@
+# Secrets: pass them at runtime with --env-file .env
+.env
+
+# History, backups and logs
+project_snapshots/
+verification_logs/
+*.bak
+*.orig
+__pycache__/
+*.pyc
+
+# Optional local verifier weights (~700 MB); mount them if you enable GROUNDING_CHECKER=local_ensemble
+local_models/

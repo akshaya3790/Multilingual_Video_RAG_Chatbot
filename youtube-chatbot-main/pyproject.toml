@@ -1,0 +1,10 @@
+# Tool settings only; the app is run with `python app_yt.py`.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.black]
+# app_yt.py is formatted with: python -m black app_yt.py
+line-length = 100
+skip-string-normalization = true
